@@ -83,6 +83,8 @@ DATABASES = {
         "NAME": "DRF-homework",
         "USER": "postgres",
         "PASSWORD": "12345678",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
