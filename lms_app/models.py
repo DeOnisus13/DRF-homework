@@ -25,7 +25,7 @@ class Lesson(models.Model):
     description = models.TextField(**NULLABLE, verbose_name="Описание")
     preview = models.ImageField(upload_to="lms_app/", **NULLABLE, verbose_name="Превью")
     video_link = models.URLField(max_length=200, **NULLABLE, verbose_name="Ссылка на видео")
-    course = models.ForeignKey(Course, on_delete=models.SET_NULL, **NULLABLE, verbose_name="Курс")
+    course = models.ForeignKey(Course, on_delete=models.SET_NULL, **NULLABLE, verbose_name="Курс", related_name="lesson")
 
     def __str__(self):
         return f"{self.name}"
