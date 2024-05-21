@@ -1,9 +1,10 @@
-from rest_framework.generics import CreateAPIView, ListAPIView
-from rest_framework.viewsets import ModelViewSet
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import OrderingFilter
-from users.models import User, Payment
-from users.serializers import UserSerializer, PaymentSerializer
+from rest_framework.generics import CreateAPIView, ListAPIView
+from rest_framework.viewsets import ModelViewSet
+
+from users.models import Payment, User
+from users.serializers import PaymentSerializer, UserSerializer
 
 
 class UserViewSet(ModelViewSet):
