@@ -6,11 +6,10 @@ from users.models import User
 class Command(BaseCommand):
     def handle(self, *args, **options):
         user = User.objects.create(
-            email="admin@sky.pro",
+            email="manager@sky.pro",
             is_active=True,
             is_staff=True,
-            is_superuser=True,
         )
         user.set_password("admin")
         user.save()
-        print("Суперпользователь успешно создан")
+        print("Менеджер успешно создан")

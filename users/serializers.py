@@ -1,11 +1,21 @@
 from rest_framework.serializers import ModelSerializer
 
-from users.models import User
+from users.models import Payment, User
+
+
+class PaymentSerializer(ModelSerializer):
+    """Сериализатор для модели платежей"""
+
+    class Meta:
+        model = Payment
+        fields = "__all__"
 
 
 class UserSerializer(ModelSerializer):
-    """Сериализатор для пользователя"""
+    """Сериализатор для модели пользователя"""
+
+    payment_history = PaymentSerializer(source="user", many=True)
 
     class Meta:
         model = User
-        fields = ("id", "email", "phone", "password", "is_active", "is_staff", "is_superuser",)
+        exclude = ("password", "last_login", "date_joined", )

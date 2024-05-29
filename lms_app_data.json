@@ -1,0 +1,95 @@
+[
+  {
+    "model": "lms_app.course",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "preview": "",
+      "description": "Курс по Python"
+    }
+  },
+  {
+    "model": "lms_app.course",
+    "pk": 2,
+    "fields": {
+      "name": "Django",
+      "preview": "",
+      "description": "Курс по Django"
+    }
+  },
+  {
+    "model": "lms_app.course",
+    "pk": 3,
+    "fields": {
+      "name": "HTML/CSS",
+      "preview": "",
+      "description": "Курс по HTML/CSS"
+    }
+  },
+  {
+    "model": "lms_app.lesson",
+    "pk": 1,
+    "fields": {
+      "name": "Основы Python",
+      "description": "Урок по основам Python",
+      "preview": "",
+      "video_link": null,
+      "course": 1
+    }
+  },
+  {
+    "model": "lms_app.lesson",
+    "pk": 2,
+    "fields": {
+      "name": "ООП Python",
+      "description": "Урок по ООП Python",
+      "preview": "",
+      "video_link": null,
+      "course": 1
+    }
+  },
+  {
+    "model": "lms_app.lesson",
+    "pk": 3,
+    "fields": {
+      "name": "Основы Django",
+      "description": "Урок по основам Django",
+      "preview": "",
+      "video_link": null,
+      "course": 2
+    }
+  },
+  {
+    "model": "lms_app.lesson",
+    "pk": 4,
+    "fields": {
+      "name": "Django REST",
+      "description": "Урок по Django REST",
+      "preview": "",
+      "video_link": null,
+      "course": 2
+    }
+  },
+  {
+    "model": "lms_app.lesson",
+    "pk": 5,
+    "fields": {
+      "name": "Основы HTML/CSS",
+      "description": "Урок по основам HTML/CSS",
+      "preview": "",
+      "video_link": null,
+      "course": 3
+    }
+  },
+  {
+    "model": "lms_app.lesson",
+    "pk": 6,
+    "fields": {
+      "name": "Углубленный Python",
+      "description": "Урок по углубленному Python",
+      "preview": "",
+      "video_link": null,
+      "course": 1
+    }
+  }
+]
