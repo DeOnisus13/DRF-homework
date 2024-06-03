@@ -18,6 +18,7 @@ class Course(models.Model):
     class Meta:
         verbose_name = "Курс"
         verbose_name_plural = "Курсы"
+        ordering = ("id",)
 
 
 class Lesson(models.Model):
@@ -36,3 +37,19 @@ class Lesson(models.Model):
     class Meta:
         verbose_name = "Урок"
         verbose_name_plural = "Уроки"
+        ordering = ("id",)
+
+
+class Subscription(models.Model):
+    """Модель подписки пользователя на курс"""
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, **NULLABLE, verbose_name="Подписчик")
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, **NULLABLE, verbose_name="Курс")
+
+    def __str__(self):
+        return f"{self.course} - {self.user}"
+
+    class Meta:
+        verbose_name = "Подписка"
+        verbose_name_plural = "Подписки"
+        ordering = ("id",)
