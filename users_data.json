@@ -4,7 +4,7 @@
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$720000$8BKmhyThRNHRxVEegOSk20$OIQn7aBF1Y6JK/Do1w1bPsob7ny1VpTB8/EVfrkoiHM=",
-      "last_login": "2024-05-20T18:59:27.819Z",
+      "last_login": "2024-05-29T02:14:40.646Z",
       "is_superuser": true,
       "first_name": "",
       "last_name": "",
@@ -30,12 +30,14 @@
       "last_name": "",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2024-05-21T19:57:00.783Z",
+      "date_joined": "2024-05-21T19:57:00Z",
       "email": "manager@sky.pro",
       "phone": null,
       "city": null,
       "avatar": "",
-      "groups": [],
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   },
@@ -92,6 +94,26 @@
       "is_active": true,
       "date_joined": "2024-05-21T19:57:10.964Z",
       "email": "test3@sky.pro",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-29T02:22:26.986Z",
+      "email": "new_test@sky.pro",
       "phone": null,
       "city": null,
       "avatar": "",

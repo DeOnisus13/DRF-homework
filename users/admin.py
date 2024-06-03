@@ -2,7 +2,10 @@ from django.contrib import admin
 
 from users.models import Payment, User
 
-admin.site.register(User)
+
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    list_display = ("email", "id",)
 
 
 @admin.register(Payment)
