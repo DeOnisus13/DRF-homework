@@ -28,8 +28,8 @@ class CourseViewSet(ModelViewSet):
         elif self.action in ["list", "retrieve", "update"]:
             self.permission_classes = (IsModerator | IsOwner,)
         elif self.action == "destroy":
-            self.permission_classes = (~IsModerator, IsOwner,)
-        return super().get_permissions()
+            self.permission_classes = (IsOwner,)
+        return [permission() for permission in self.permission_classes]
 
 
 class LessonCreateAPIView(CreateAPIView):
@@ -66,7 +66,7 @@ class LessonUpdateAPIView(UpdateAPIView):
 class LessonDestroyAPIView(DestroyAPIView):
     """Generic-класс для удаления урока"""
     queryset = Lesson.objects.all()
-    permission_classes = [IsAuthenticated, ~IsModerator, IsOwner]
+    permission_classes = [IsAuthenticated, IsOwner]
 
 
 class SubscriptionAPIView(APIView):

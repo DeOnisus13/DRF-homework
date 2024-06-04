@@ -6,7 +6,7 @@ from lms_app.validators import validate_video_link
 
 class LessonSerializer(ModelSerializer):
     """Сериализатор для уроков"""
-    video_link = URLField(validators=[validate_video_link], allow_null=True, allow_blank=True)
+    video_link = URLField(validators=[validate_video_link], allow_null=True, allow_blank=True, required=False)
 
     class Meta:
         model = Lesson
