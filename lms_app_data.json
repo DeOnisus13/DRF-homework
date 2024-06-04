@@ -72,7 +72,7 @@
       "name": "Django REST",
       "description": "Урок по Django REST",
       "preview": "",
-      "video_link": null,
+      "video_link": "https://www.youtube.com/watch?v=5z6Kl7Pz-JQ",
       "course": 2,
       "owner": 6
     }
@@ -111,6 +111,14 @@
       "video_link": null,
       "course": null,
       "owner": 8
+    }
+  },
+  {
+    "model": "lms_app.subscription",
+    "pk": 1,
+    "fields": {
+      "user": 6,
+      "course": 3
     }
   }
 ]

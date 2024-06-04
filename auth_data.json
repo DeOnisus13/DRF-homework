@@ -324,6 +324,42 @@
     }
   },
   {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Подписка",
+      "content_type": 10,
+      "codename": "add_subscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Подписка",
+      "content_type": 10,
+      "codename": "change_subscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Подписка",
+      "content_type": 10,
+      "codename": "delete_subscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Подписка",
+      "content_type": 10,
+      "codename": "view_subscription"
+    }
+  },
+  {
     "model": "auth.group",
     "pk": 1,
     "fields": {
