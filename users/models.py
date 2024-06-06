@@ -24,6 +24,7 @@ class User(AbstractUser):
     class Meta:
         verbose_name = "Пользователь"
         verbose_name_plural = "Пользователи"
+        ordering = ("id",)
 
 
 class Payment(models.Model):
@@ -44,3 +45,4 @@ class Payment(models.Model):
     class Meta:
         verbose_name = "Платеж"
         verbose_name_plural = "Платежи"
+        ordering = ("id",)
