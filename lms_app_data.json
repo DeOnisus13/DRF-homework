@@ -6,7 +6,8 @@
       "name": "Python",
       "preview": "",
       "description": "Курс по Python",
-      "owner": 5
+      "owner": 5,
+      "price": 5000
     }
   },
   {
@@ -16,7 +17,8 @@
       "name": "Django",
       "preview": "",
       "description": "Курс по Django",
-      "owner": 6
+      "owner": 6,
+      "price": 8000
     }
   },
   {
@@ -26,7 +28,8 @@
       "name": "HTML/CSS",
       "preview": "",
       "description": "Курс по HTML/CSS",
-      "owner": 7
+      "owner": 7,
+      "price": 2000
     }
   },
   {

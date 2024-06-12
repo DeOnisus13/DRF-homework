@@ -38,6 +38,8 @@ class Payment(models.Model):
     lesson = models.ForeignKey(Lesson, on_delete=models.SET_NULL, **NULLABLE, verbose_name="Оплаченный урок")
     payment_amount = models.PositiveIntegerField(verbose_name="Сумма оплаты")
     payment_method = models.CharField(max_length=15, choices=PAYMENT_METHOD_CHOICES, verbose_name="Способ оплаты")
+    session_id = models.CharField(max_length=255, **NULLABLE, verbose_name="ID сессии Stripe")
+    link = models.URLField(max_length=400, **NULLABLE, verbose_name="Ссылка на оплату в Stripe")
 
     def __str__(self):
         return f"{self.user} - {self.payment_amount}р. - {self.course if self.course else self.lesson}"

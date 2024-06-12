@@ -4,7 +4,7 @@
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$720000$8BKmhyThRNHRxVEegOSk20$OIQn7aBF1Y6JK/Do1w1bPsob7ny1VpTB8/EVfrkoiHM=",
-      "last_login": "2024-05-29T02:14:40.646Z",
+      "last_login": "2024-06-07T06:25:51.051Z",
       "is_superuser": true,
       "first_name": "",
       "last_name": "",
@@ -130,7 +130,9 @@
       "course": 1,
       "lesson": null,
       "payment_amount": 1000,
-      "payment_method": "cash"
+      "payment_method": "cash",
+      "session_id": null,
+      "link": null
     }
   },
   {
@@ -142,7 +144,9 @@
       "course": 1,
       "lesson": null,
       "payment_amount": 2000,
-      "payment_method": "cash"
+      "payment_method": "cash",
+      "session_id": null,
+      "link": null
     }
   },
   {
@@ -154,7 +158,51 @@
       "course": null,
       "lesson": 3,
       "payment_amount": 1500,
-      "payment_method": "card"
+      "payment_method": "card",
+      "session_id": null,
+      "link": null
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 4,
+    "fields": {
+      "user": 6,
+      "payment_date": "2024-06-07T06:32:04.703Z",
+      "course": 1,
+      "lesson": null,
+      "payment_amount": 48,
+      "payment_method": "card",
+      "session_id": "cs_test_a1OXMLX5gd5MKNWL55xqWgIG4nFYpd7CtL3cL0TWFVLNidnXAgZ7cHKaf2",
+      "link": "https://checkout.stripe.com/c/pay/cs_test_a1OXMLX5gd5MKNWL55xqWgIG4nFYpd7CtL3cL0TWFVLNidnXAgZ7cHKaf2#fidkdWxOYHwnPyd1blpxYHZxWjA0VUpSRm5AQz1WUHx%2FMERXMVFsVjJhf2J0RFZfQGZNXXNXU049XXdQYjxOXHBKfGpWQGw3NktEbEJyT1VfSm5NTWE9XGkxR3N2R31paXNsSUk2VkhHfz1vNTV8MzR9cHBUdycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 5,
+    "fields": {
+      "user": 6,
+      "payment_date": "2024-06-07T06:43:22.000Z",
+      "course": 1,
+      "lesson": null,
+      "payment_amount": 48,
+      "payment_method": "card",
+      "session_id": "cs_test_a1o0kLJXRu3shvUOeiZu0sSKLkDY2dKEhE1sT5kSV75eDB18oRaqmUU5MR",
+      "link": "https://checkout.stripe.com/c/pay/cs_test_a1o0kLJXRu3shvUOeiZu0sSKLkDY2dKEhE1sT5kSV75eDB18oRaqmUU5MR#fidkdWxOYHwnPyd1blpxYHZxWjA0VUpSRm5AQz1WUHx%2FMERXMVFsVjJhf2J0RFZfQGZNXXNXU049XXdQYjxOXHBKfGpWQGw3NktEbEJyT1VfSm5NTWE9XGkxR3N2R31paXNsSUk2VkhHfz1vNTV8MzR9cHBUdycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 7,
+    "fields": {
+      "user": 6,
+      "payment_date": "2024-06-07T06:59:06.389Z",
+      "course": 1,
+      "lesson": null,
+      "payment_amount": 48,
+      "payment_method": "card",
+      "session_id": "cs_test_a1inOPCfjYP61YsyH2GwAw9MagrBwVf1Lgr7KaHzp72pKIIz6uHjpksahq",
+      "link": "https://checkout.stripe.com/c/pay/cs_test_a1inOPCfjYP61YsyH2GwAw9MagrBwVf1Lgr7KaHzp72pKIIz6uHjpksahq#fidkdWxOYHwnPyd1blpxYHZxWjA0VUpSRm5AQz1WUHx%2FMERXMVFsVjJhf2J0RFZfQGZNXXNXU049XXdQYjxOXHBKfGpWQGw3NktEbEJyT1VfSm5NTWE9XGkxR3N2R31paXNsSUk2VkhHfz1vNTV8MzR9cHBUdycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
     }
   }
 ]

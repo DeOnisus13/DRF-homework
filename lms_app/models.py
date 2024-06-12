@@ -11,9 +11,10 @@ class Course(models.Model):
     preview = models.ImageField(upload_to="lms_app/", **NULLABLE, verbose_name="Превью")
     description = models.TextField(**NULLABLE, verbose_name="Описание")
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE, verbose_name="Владелец")
+    price = models.PositiveIntegerField(default=0, verbose_name="Цена курса")
 
     def __str__(self):
-        return f"{self.name}"
+        return f"{self.name} - {self.price} - {self.owner}"
 
     class Meta:
         verbose_name = "Курс"
