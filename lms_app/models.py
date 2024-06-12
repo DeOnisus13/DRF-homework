@@ -45,7 +45,7 @@ class Subscription(models.Model):
     """Модель подписки пользователя на курс"""
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, **NULLABLE, verbose_name="Подписчик")
-    course = models.ForeignKey(Course, on_delete=models.CASCADE, **NULLABLE, verbose_name="Курс")
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, **NULLABLE, verbose_name="Курс", related_name="course_subscription")
 
     def __str__(self):
         return f"{self.course} - {self.user}"
