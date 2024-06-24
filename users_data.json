@@ -4,7 +4,7 @@
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$720000$8BKmhyThRNHRxVEegOSk20$OIQn7aBF1Y6JK/Do1w1bPsob7ny1VpTB8/EVfrkoiHM=",
-      "last_login": "2024-06-07T06:25:51.051Z",
+      "last_login": "2024-06-12T11:17:46.936Z",
       "is_superuser": true,
       "first_name": "",
       "last_name": "",
@@ -114,6 +114,46 @@
       "is_active": true,
       "date_joined": "2024-05-29T02:22:26.986Z",
       "email": "new_test@sky.pro",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$xp2gaGaCZcn8RHmFxiij9S$kJJCO/fkvxdC5n/PeL/x9tiumH1Xb35T46odH2KfIHo=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-12T11:35:24.046Z",
+      "email": "de94onisus@gmail.com",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$VgjJATcuIJDBBhqJxRoacw$85rSdvLrYlg03kEY4AhriH9NLC/QaL+JAPDdX7g/jPs=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-12T11:38:24.972Z",
+      "email": "forg1tlabs@gmail.com",
       "phone": null,
       "city": null,
       "avatar": "",

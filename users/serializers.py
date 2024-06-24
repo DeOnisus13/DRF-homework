@@ -19,4 +19,5 @@ class UserSerializer(ModelSerializer):
 
     class Meta:
         model = User
-        exclude = ("password", "last_login", "date_joined", )
+        exclude = ("last_login", "date_joined",)
+        extra_kwargs = {"password": {"write_only": True}}

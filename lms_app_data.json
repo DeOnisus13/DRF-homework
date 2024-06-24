@@ -27,7 +27,7 @@
     "fields": {
       "name": "HTML/CSS",
       "preview": "",
-      "description": "Курс по HTML/CSS",
+      "description": "Новый курс по HTML/CSS",
       "owner": 7,
       "price": 2000
     }
@@ -121,6 +121,22 @@
     "pk": 1,
     "fields": {
       "user": 6,
+      "course": 3
+    }
+  },
+  {
+    "model": "lms_app.subscription",
+    "pk": 2,
+    "fields": {
+      "user": 13,
+      "course": 3
+    }
+  },
+  {
+    "model": "lms_app.subscription",
+    "pk": 3,
+    "fields": {
+      "user": 14,
       "course": 3
     }
   }
